@@ -13,9 +13,9 @@
 
 For example:
 
-    git clone https://github.com/phhusson/treble_experimentations
-    mkdir Lineage; cd Lineage
-    bash ../treble_experimentations/build-rom.sh android-8.1 lineage
+    git clone https://github.com/JebteK/treble_experimentations
+    mkdir hos; cd hos
+    bash ../treble_experimentations/build-dakkar.sh lineage151 arm-aonly-vanilla-su-userdebug
 
 ## More flexible build script
 
