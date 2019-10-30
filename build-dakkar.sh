@@ -441,8 +441,10 @@ function patch_things() {
 
 function build_variant() {
     lunch "$1"
-    make $extra_make_options BUILD_NUMBER="$rom_fp" installclean
-    make $extra_make_options BUILD_NUMBER="$rom_fp" -j "$jobs" systemimage
+    # make $extra_make_options BUILD_NUMBER="$rom_fp" installclean
+    # make $extra_make_options BUILD_NUMBER="$rom_fp" -j "$jobs" systemimage
+    echo "Copying modified 28.0.cil file to 'out/target/product/phhgsi_arm_a/system/etc/selinux/mapping/'"
+    cp ../treble_experimentations/patch-files/28.0.cil out/target/product/phhgsi_arm_a/system/etc/selinux/mapping/
     make $extra_make_options BUILD_NUMBER="$rom_fp" vndk-test-sepolicy
     cp "$OUT"/system.img release/"$rom_fp"/system-"$2".img
 }
