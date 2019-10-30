@@ -48,6 +48,7 @@ ROM types:
   e-oreo
   havoc-pie
   komodo-pie
+  hollerd151
   lineage151
   lineage160
   mokee-oreo
@@ -139,6 +140,14 @@ function get_rom_type() {
             e-oreo)
                 mainrepo="https://gitlab.e.foundation/e/os/android/"
                 mainbranch="v1-oreo"
+                localManifestBranch="android-8.1"
+                treble_generate="lineage"
+                extra_make_options="WITHOUT_CHECK_API=true"
+                jack_enabled="true"
+                ;;
+            hollerd151)
+                mainrepo="https://github.com/JebteK/HollerdOS.git"
+                mainbranch="master"
                 localManifestBranch="android-8.1"
                 treble_generate="lineage"
                 extra_make_options="WITHOUT_CHECK_API=true"
