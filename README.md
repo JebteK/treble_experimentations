@@ -14,7 +14,7 @@
 For example:
 
     git clone https://github.com/JebteK/treble_experimentations
-    mkdir hos; cd hos
+    mkdir HollerdOS; cd HollerdOS
     bash ../treble_experimentations/build-dakkar.sh lineage151 arm-aonly-vanilla-su-userdebug
 
 ## More flexible build script
