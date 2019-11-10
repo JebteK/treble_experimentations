@@ -8,9 +8,11 @@
 * clone this repository
 * call the build scripts from a separate directory
 
+```
     git clone https://github.com/JebteK/treble_experimentations
     mkdir HollerdOS; cd HollerdOS
     bash ../treble_experimentations/build-dakkar.sh hollerd151 arm-aonly-vanilla-su-userdebug
+```
 
 # Setting up a new machine
 ## 1. Configure Git
